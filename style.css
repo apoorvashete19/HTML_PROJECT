@@ -1,0 +1,463 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+     font-family: Arial, sans-serif;
+}
+.top-bar {
+  background-color: #0308ac; /* Chai Point blue */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  letter-spacing: 0.5px;
+}
+.navbar {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+.navbar-menu li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+.navbar-logo img {
+  height: 40px; /* Adjust size as needed */
+}
+
+.hero-section {
+  background-image: url("https://shop.chaipoint.com/cdn/shop/files/Banner_H_37ffff84-f2ba-4925-9305-2a383799b130.jpg?v=1750328784");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  
+}
+.hero-text {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  padding: 20px;
+}
+.hero-text h2 {
+  font-size: 36px;
+  color: #0308ac;
+  margin-bottom: 10px;
+}
+.hero-text p {
+  font-size: 18px;
+  color: #01032c;
+}
+.hero-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #03087e;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  
+}
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid white;
+}
+.grid-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 15px;
+  background-color: white;
+}
+
+.item {
+  width: 300px;
+  background-color:white;
+  border-radius: 8px;
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.item h3 {
+  font-size: 18px;
+  padding: 10px;
+  color: #333;
+ 
+}
+.collection-section {
+  padding: 10px;
+  background-color:  white;
+  text-align: center;
+}
+
+.section-heading {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0078ad; /* Chai Point blue */
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.section-heading::after {
+  content: "";
+  width: 40px;
+  height: 3px;
+  background-color: #0078ad;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+.price-cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px 15px;
+}
+
+.prices {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.current-price {
+  font-size: 16px;
+  color:  #000114;
+  font-weight: bold;
+}
+
+.old-price {
+  font-size: 14px;
+  color: #888;
+  text-decoration: line-through;
+}
+
+.add-btn {
+  background-color:  #080dac;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.text-section
+{
+    
+  max-width: 100%;
+  margin-top: 40px ;
+  margin-bottom: 40px;
+  background-color: #fbf9f9; /* Light grey background */
+  border-radius: 2px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+  
+}
+.text-section2
+{
+    
+  max-width: 100%;
+  margin-top: 40px ;
+  margin-bottom: 40px;
+  background-color: white; /* Light grey background */
+  border-radius: 2px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+  
+}
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.plain-btn {
+  background-color: transparent;
+  border: none;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+}
+
+.plain-btn:hover {
+  color: #040ab9;
+}
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 40px;
+  background-color: #fbf9f9;
+  flex-wrap: wrap; /* Responsive fallback */
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+}
+
+.about-text h2 {
+    text-align: center;
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.about-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.about-image {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 10px;
+}
+.input-button-wrap {
+  display: flex;
+  gap: 10px;
+  justify-content: center; /* center on page */
+  align-items: center;
+  margin-top: 20px;
+}
+
+.input-button-wrap input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.input-button-wrap button {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #0d1e80;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.input-button-wrap button:hover {
+  background-color: #005f8c;
+}
+.text{
+    font-size: 19px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  text-align: center;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 30px;
+  background-color: white;
+  flex-wrap: wrap; /* Keeps it responsive */
+}
+
+.contact-details,
+.more-info,
+.icons {
+  flex: 1;
+  min-width: 250px;
+}
+.hero-section2 {
+  background-image: url("https://cdn.shopify.com/s/files/1/0415/7748/0342/files/Bulk-Orders-Desktop.jpg?v=1665243188");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  
+}
+.party-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 40px;
+  background-color: #f5f5f5;
+}
+
+.party-text {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.party-form {
+  flex: 1;
+  background-color: #d4edda; 
+  padding: 30px;
+  border-radius: 10px;
+  min-width: 300px;
+  max-width: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.party-form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.party-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.party-form input,
+.party-form textarea,
+.party-form select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.party-form textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+.party-form .submit-btn {
+  grid-column: span 2;
+  background-color: orange;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .party-section {
+    flex-direction: column;
+  }
+
+  
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  
+}
+
+.login-section {
+  background-color: white;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.login-section h2 {
+  margin-bottom: 30px;
+  font-size: 36px;
+}
+
+.login-form {
+  background-color: #ffffff;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+}
+
+.login-form label {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.login-form input {
+  padding: 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.link {
+  font-size: 14px;
+  color: #000;
+  text-decoration: underline;
+  margin-top: -10px;
+}
+
+.submit-btn {
+  background-color: #0d1e80;
+  color: white;
+  padding: 18px 0;
+  font-size: 18px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
